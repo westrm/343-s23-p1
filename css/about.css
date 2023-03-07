@@ -1,0 +1,100 @@
+
+.about-section {
+    border-radius: 10px;
+    border: 1px solid #686767;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about-section h2 {
+    margin-top: 0;
+  }
+  
+  .about-section p {
+    margin-bottom: 0;
+    
+  }
+  
+  /* Grid styles */
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    font-style: italic;
+  }
+
+  .content {
+    text-align: center;
+    border: .1rem solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #4aa1ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #013267;
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Change grid layout to single column on smaller screens */
+    .about-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    form {
+        max-width: 100%;
+      }
+  }
+  
+  /* Example styles for the first grid element */
+  .about-grid-1 {
+    background-color: #f5f5f5;
+  }
+  
+  .about-grid-1 h2 {
+    color: #1c1c1c;
+  }
+  
+  /* Example styles for the second grid element */
+  .about-grid-2 {
+    background-color: #fafafa;
+  }
+  
+  .about-grid-2 h2 {
+    color: #3e3e3e;
+  }
